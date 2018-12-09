@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>代辦事項</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
 </head>
 <body>
-    
+    <div id="wrapper">
+        <div id="header">代辦事項</div>
+        <div id="main">
+            <h1>待辦事項清單</h1>
+            <form id="inputArea" action="">
+                <input type="text" placeholder="請輸入代辦事項"><br><br>
+                <button>輸入</button><br><br>
+                <input type="button" value="輸入"><br><br>
+                <textarea rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="送出">
+            </form>
+        </div>
+        <div id="footer"></div>
+    </div>
 </body>
+<script src="app.js"></script>
+
 </html>
