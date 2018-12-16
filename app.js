@@ -16,7 +16,12 @@ $("#addTodoBtn").on("click",function(){
     event.preventDefault();
     // 從jquery抓出來的東西加個$字號
     var $addTodoInput = $("#addTodoInput");
-    var newTodoText = $addTodoInput.val();
+    // var str = "       Hello World!        ";
+    // alert(str.trim());
+    // 修剪（）方法從字符串的兩側去除空格。
+    // string.trim()
+    // https://www.w3schools.com/jsref/jsref_trim_string.asp
+    var newTodoText = $addTodoInput.val().trim();
     // console.log("測試input是否真的有值出現" + $("#addTodoInput").val());
     // 中文化
     moment.locale('zh-tw');
