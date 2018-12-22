@@ -95,7 +95,12 @@ $("#addTodoBtn").on("click",function(){
 
     // [2018-12-22] 07. 新的物件陣列，push進todoData
     todoData.push(newTodoData);
-    // [2018-12-22] 08. 執行函數，這樣才會在HTML上出現
+
+        
+    // [2018-12-22] 08. 清空畫面，如果沒有輸入，會多出一模一樣的東西
+    $("ul").empty();
+
+    // [2018-12-22] 09. 執行函數，這樣才會在HTML上出現
     render(todoData);
     //  $("ul").append(`<li>${newTodoText} ${moment().format('llll')}</li>`);
 
