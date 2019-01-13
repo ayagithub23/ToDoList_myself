@@ -9,12 +9,13 @@ body {
 }
 
 .header {
-    font-size: 200%;
+    font-size: 220%;
     font-weight: bold;
     line-height: 3;
     text-align: center;
     text-indent: 16px;
     color: #fff;
+    background: #000;
 }
 
 .container {
@@ -22,6 +23,7 @@ body {
     top: 50%;
     left: 50%;
     box-sizing: border-box;
+    width: 100%;
     max-width: 500px;
     margin: 0 auto;
     transform: translate(-50%, -50%);
@@ -29,6 +31,7 @@ body {
 }
 
 h1 {
+    font-size: 150%;
     line-height: 2;
     text-align: center;
     color: #fff;
@@ -36,22 +39,26 @@ h1 {
 }
 
 form {
-    padding: 10px;
+    display: flex;
+    width: 100%;
 }
 
 input {
-    line-height: 3.5;
-    width: 78%;
-    padding: 0 5px;
-    border: 1px solid blue;
+    width: 80%;
+    padding: 5px;
+    font-size: 120%;
+    border: 2px solid red;
 }
 
 #addTodoBtn {
-    float: right;
+    font-size: 120%;
+    font-weight: bold;
+    width: 20%;
+    cursor: pointer;
     padding: 15px 8px;
     color: #fff;
     border: unset;
-    background: blue;
+    background: red;
 }
 
 .deleteBtn {
@@ -61,14 +68,14 @@ input {
     background: red;
 }
 
-ul {
-    padding: 10px;
-}
+
 
 li {
-    padding: 5px 0;
+    line-height: 3;
+    overflow: hidden;
     list-style-type: none;
 }
+
 /* input{
     margin: 20px 0 ;
     position: relative;
@@ -82,3 +89,33 @@ li {
     line-height: 1;
     position: absolute;
 } */
+.delete {
+    font-weight: bold;
+    line-height: 3;
+    margin-right: 5px;
+    margin-left: -8%;
+
+    /* line-height: 3; */
+    padding: 5px;
+    cursor: pointer;
+    transition: all 1s;
+    color: white;
+    border: unset;
+    background: red;
+}
+
+li:hover .delete {
+    margin-left: 0;
+    transition: all 1s;
+}
+
+.date-right {
+    font-size: 90%;
+    float: right;
+    padding-right: 5px;
+    color: #ababab;
+}
+
+#todoList li:nth-child(2n) {
+    background: rgb(247, 247, 247);
+}

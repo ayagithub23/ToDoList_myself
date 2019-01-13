@@ -13,17 +13,18 @@
 </head>
 <body>
 <div id="wrapper">
-    <div class="header">代辦事項</div>
+    <div class="header">待辦事項清單</div>
     <div class="container">
-        <h1>待辦事項清單</h1>
+        <p id="errorMsg"></p>
+        <h1>Peiya的待辦事項</h1>
         <form id="inputArea" action="">
             <input id="addTodoInput" type="text" placeholder="請輸入代辦事項" >
-            <button id="addTodoBtn" type="submit">輸入</button><br><br>
+            <button id="addTodoBtn" type="submit" onclick="save()">輸入</button><br><br>
             <!-- <input type="button" value="輸入"><br><br> -->
             <!-- <textarea rows="4" cols="50"></textarea><br><br> -->
             <!--<input type="submit" value="送出">-->
         </form>
-        <ul>
+        <ul id="todoList">
             <!-- <li><span class="delete"><button>刪除</button></span>待辦事項1</li>
             <li><span class="delete"><button>刪除</button></span>待辦事項2</li>
             <li><span class="delete"><button>刪除</button></span>待辦事項3</li> -->
@@ -31,6 +32,8 @@
     </div>
     <div id="footer"></div>
 </div>
+</head>
+
 </body>
 <script src="app.js"></script>
 
